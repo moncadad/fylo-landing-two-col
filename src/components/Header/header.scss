@@ -1,0 +1,32 @@
+@import url("../../index.css");
+@import url("../../app.scss");
+.section__header{
+  background-color: #fff;
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 24px;
+    img.logo{
+      max-width: 168px;
+    }
+    .navbar{
+      .link + .link {
+        margin-left: 24px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .section__header{
+  .wrapper {
+    padding-block: 64px;
+    .navbar {
+      .link + .link {
+        margin-left: 56px;
+      }
+    }
+  }
+}
+}

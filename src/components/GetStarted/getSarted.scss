@@ -1,0 +1,75 @@
+@import url("../../index.css");
+@import url("../../app.scss");
+.section__get-started {
+  background-color: var(--Desaturated-blue);
+  color: #fff;
+  .wrapper {
+    padding: 16px;
+    padding-block: 56px;
+    // margin-bottom: 64px;
+    .col-1 {
+      .img-hero {
+        border-radius: 1px;
+      }
+    }
+    .col-1 {
+      text-align: center;
+      padding-top: 32px;
+      .heading-3 {
+        line-height: 1.4;
+        padding-bottom: 16px;
+      }
+      .text {
+        line-height: 1.8;
+        padding-bottom: 16px;
+      }
+    }
+    .col-2 {
+      .error-msg.on{
+        color: var(--Light-gray);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .section__get-started {
+    .wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-block: 88px;
+      .col-1 {
+        width: 100%;
+        max-width: 620px;
+        text-align: left;
+        margin-right: 48px;
+        .text {
+          max-width: 560px;
+        }        
+      }
+      .col-2{
+        width: 100%;
+        max-width: 480px;
+        .form__email{
+            display: flex;
+            flex-direction: column;
+            .form__input {
+                display: inline-block;
+                max-width: 480px;
+                input{
+                    width: 100%;       
+                    padding: 20px;    
+                    border-radius: 4px;   
+                }
+            }
+            button {
+                margin-top: 16px;
+                padding: 20px;     
+                border-radius: 4px 
+            }
+        }
+      }
+    }
+  }
+}
